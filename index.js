@@ -22,7 +22,7 @@ window.addEventListener("mousemove", (event) => {
         ctx.fillStyle = "red";
     else
         ctx.fillStyle = "green";
-    ctx.fillRect(event.clientX, event.clientY, 100, 100)
+    ctx.fillRect(rect1.x, rect1.y, rect1.width, rect1.height)
 });
 
 window.addEventListener("resize", () => {
