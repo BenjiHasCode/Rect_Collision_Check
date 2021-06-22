@@ -15,8 +15,8 @@ function draw() {
 window.addEventListener("mousemove", (event) => {
     draw();
 
-    rect1.x = event.clientX;
-    rect1.y = event.clientY;
+    rect1.x = event.clientX - rect1.width/2;
+    rect1.y = event.clientY - rect1.height/2;
 
     if (collision(rect1, rect2))
         ctx.fillStyle = "red";
